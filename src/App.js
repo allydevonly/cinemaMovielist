@@ -10,17 +10,27 @@ function App() {
   // State variables
   const [movies, setMovies] = useState([
     // Initial list of movies
-    { id: 1, title: "Sound of Metal",
-     description: "A heavy metal drummer's life is turned upside down when he begins to lose his hearing and he must confront a future filled with silence.",
-     posterURL: "./SOUND-OF-METAL-2020.jpeg",
-     rating: 7.7 ,},
-  
-       { id: 2, title: "School of Rock",
-     description: "User reviews591 ... A wannabe rock star in need of cash (Jack Black) poses as a substitute teacher at a prep school, and tries to turn his class into a rock band.",
-      posterURL: ".School-of-Rock-poster-iii-e1579652182124.jp",
-       rating: 7.2 },
-    // Add more initial movies as needed
+    { 
+      id: 1, 
+      title: "Sound of Metal",
+      description: "A heavy metal drummer's life is turned upside down when he begins to lose his hearing and he must confront a future filled with silence.",
+      posterURL: "./SOUND-OF-METAL-2020.jpeg",
+      rating: 7.7,
+      trailerLink:"https://www.youtube.com/embed/VFOrGkAvjAE",
+    },
+
+    { 
+      id: 2, 
+      title: "School of Rock",
+      description: "A wannabe rock star in need of cash poses as a substitute teacher at a prep school, and tries to turn his class into a rock band.",
+      posterURL: "./School-of-Rock-poster-iii-e1579652182124.jpg",
+      rating: 7.2,
+      trailerLink: "https://www.youtube.com/embed/3PsUJFEBC74",
+    },
+    // Add more movies as needed
   ]);
+
+
 
   const [filterTitle, setFilterTitle] = useState('');
   const [filterRating, setFilterRating] = useState('');
@@ -78,5 +88,9 @@ function App() {
     </div>
   );
 }
+
+
+
+
 
 export default App;
